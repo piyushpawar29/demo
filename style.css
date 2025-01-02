@@ -1,0 +1,457 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('bkg.png') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #523070;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-menu a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+
+.navbar .nav-menu a:hover {
+    background-color: #523070;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+/* Content Section */
+.content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #333;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #523070;
+}
+
+.content p {
+
+    top:80px;
+    left: 150px;
+    position: relative;
+    margin-top: 50px;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    position: relative;
+    top: 60px;
+    left: 290px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.btn.learn-more {
+    background: #523070;
+    color: white;
+}
+
+.btn.learn-more:hover {
+    background: #412060;
+}
+
+.btn.connect {
+    background: #523070;
+    color: white;
+}
+
+.btn.connect:hover {
+    background: #412060;
+}
+
+/* Features Section */
+.features {
+    background: #f9f9f9;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #523070;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.feature-cards .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1 1 300px;
+}
+
+.feature-cards .card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.feature-cards .card p {
+    font-size: 0.9rem;
+}
+.feature-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Footer */
+.footer {
+    background: #523070;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+    }
+}
+/* About Section */
+.about-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.629), rgba(255, 255, 255, 0.645)), url(aboutus-bg.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-section .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #523070;
+}
+
+.about-section p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.about-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+/* Services Section */
+.services-section {
+    background: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.services-section .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.services-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #523070;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-cards .card {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.service-cards .card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #523070;
+}
+
+.service-cards .card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
+.service-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-cards .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background: #f9f9f9;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.testimonials-section .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.testimonials-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #523070;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.testimonial-cards .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.testimonial-cards .card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #523070;
+}
+
+.testimonial-cards .card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.testimonial-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}   
+
+.testimonial-cards .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f9f9f9;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #523070;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-section textarea {
+    resize: vertical;
+}
+
+.contact-section button {
+    background: #523070;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background: #412060;
+}
+
+/* Social Media Section */
+.social-media-section {
+    background: #f9f9f9;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.social-media-section .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.social-media-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #523070;
+}
+
+.social-media-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}   
+
+.social-icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img {
+    max-width: 100%;
+    height: auto;
+}
